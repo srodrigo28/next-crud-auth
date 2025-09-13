@@ -35,16 +35,6 @@ export default function Navbar() {
         setUserProfile(profileData);
       }
       
-      const { data: productsData, error: productsError } = await supabase
-        .from('loja_produtos')
-        .select('*');
-
-      if (productsError) {
-        console.error("Erro ao buscar produtos:", productsError);
-        setError(productsError.message);
-      } else {
-        setProducts(productsData);
-      }
     };
     fetchUserData();
   }, [router]);
@@ -68,9 +58,9 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-gray-800 p-4 w-screen">
+      <nav className="bg-slate-800 p-4 w-screen px-10">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="/" className="text-white text-lg font-bold">MyApp</a>
+          <a href="/" className="text-white text-lg font-bold w-44">MyApp</a>
           
           <div className='shadow-lg p-4 rounded-lg bg-gray-700 flex space-x-4'>
             <a href="/perfil" className="text-white mr-4">Perfil</a>
@@ -80,7 +70,7 @@ export default function Navbar() {
           </div>
           
           {/* ✅ Área do usuário com foto e nome */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 w-44">
             {userProfile && (
               <div 
                 onClick={openProfileModal} 
@@ -117,32 +107,7 @@ export default function Navbar() {
       {/* --- Seção de Produtos --- */}
       <section className="w-full mt-8 p-4">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Meus Produtos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.length > 0 ? (
-            products.map((product) => (
-              <div key={product.id} className="bg-white p-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer">
-                {product.foto_produto && (
-                  <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
-                    <Image 
-                      src={product.foto_produto} 
-                      alt={product.nome} 
-                      fill={true} 
-                      objectFit="cover" 
-                      className="rounded-xl"
-                    />
-                  </div>
-                )}
-                <h3 className="text-xl font-semibold text-gray-800">{product.nome}</h3>
-                <p className="text-lg text-emerald-600 mt-2">R${product.preco.toFixed(2)}</p>
-                <p className="text-gray-500 text-sm mt-1">{product.descricao}</p>
-              </div>
-            ))
-          ) : (
-            <div className="col-span-full text-center text-gray-500">
-              <p>Nenhum produto cadastrado.</p>
-            </div>
-          )}
-        </div>
+        
       </section>
 
       {/* --- O Modal de Perfil --- */}
