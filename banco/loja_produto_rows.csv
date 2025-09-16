@@ -1,0 +1,7 @@
+id,created_at,nome,descricao,preco,imagem,user_id
+1,2025-09-16 12:23:53.814843+00,Mousse Maracujá,Copo 500ml,18,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758025433502.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
+2,2025-09-16 12:34:51.667501+00,Mousse Chocolate,Copo com 500ml.,19,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758026100265.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
+3,2025-09-16 12:37:27.381089+00,Suco Laranja,Copo com 500ml.,12,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758026247480.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
+4,2025-09-16 12:37:57.563083+00,Suco Acerola,Copo com 500ml,12.99,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758026277900.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
+5,2025-09-16 12:42:10.047202+00,Salgado com Salsicha,Salgado 200gr,8,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758026529729.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
+6,2025-09-16 12:42:44.034809+00,Salgado Americano presunto e queijo,Salgado 200gr,9,https://ayzxshgoaohysqjfbucm.supabase.co/storage/v1/object/public/box/produtos/5fa8a4d8-a272-4403-b2f7-65667fc6b6ed/1758026564292.jpg,5fa8a4d8-a272-4403-b2f7-65667fc6b6ed
